@@ -1,0 +1,22 @@
+{
+    "name": "marvel-comics-app",
+    "main": "server.js",
+    "version": "1.0.0",
+    "scripts": {
+        "client": "cd client && yarn start",
+        "server": "nodemon server.js",
+        "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+    },
+    "dependencies": {
+        "body-parser": "^1.18.2",
+        "express": "^4.16.2",
+        "jsonwebtoken": "^8.1.1",
+        "morgan": "^1.9.0",
+        "node-fetch": "^1.4.1",
+        "query-string": "4.1.0",
+        "react-router-dom": "^4.2.2"
+    },
+    "devDependencies": {
+        "concurrently": "^3.5.0"
+    }
+}
